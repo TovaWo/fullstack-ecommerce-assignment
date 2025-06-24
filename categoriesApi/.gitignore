@@ -1,0 +1,30 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio Code settings
+.vscode/
+
+# Logs
+*.log
+
+# Rider IDE files
+.idea/
+
+# NuGet packages
+*.nupkg
+*.snupkg
+.nuget/
+
+# ASP.NET temporary files
+*.vs/
+*.vscode/
+
+# Publish output
+publish/
+
+# DotEnv files
+.env
+
+# Others
+*.DS_Store
