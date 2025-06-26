@@ -203,7 +203,7 @@ const ShoppingList: React.FC = () => {
             
             <Stack spacing={2}>
               {cartItems.map((item) => (
-                <Card key={item.id} variant="outlined" sx={{ bgcolor: 'grey.50' }}>
+                <Card key={item.categoryName + item.categoryId} variant="outlined" sx={{ bgcolor: 'grey.50' }}>
                   <CardContent sx={{ py: 2 }}>
                     <Box display="flex" justifyContent="space-between" alignItems="center">
                       <Box>
