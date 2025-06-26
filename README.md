@@ -20,7 +20,7 @@ git clone https://github.com/TovaWo/fullstack-ecommerce-assignment.git
 This project is split into three main parts:
 
 - [Frontend - ordersApp (React)](./ordersApp/README.md)
-- [Backend - ordersApi (NodeJS)](./ordersApi.README.md)
+- [Backend - ordersApi (NodeJS)](./ordersApi/dist/README.md)
 - [Backend - categoriesApi (.NET 8)](./categoriesApi/README.md)
 
 Each folder contains its own README with specific setup and usage instructions.
