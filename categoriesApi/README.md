@@ -12,22 +12,6 @@ A simple .NET 8 Web API project that returns a list of categories from a SQL Ser
 
 ---
 
-## 📂 Project Structure
-
-CategoriesApi/
-├── Controllers/
-│ └── CategoriesController.cs
-├── Data/
-│ └── AppDbContext.cs
-├── Models/
-│ └── Category.cs
-├── Services/
-│ └── CategoryService.cs
-├── Program.cs
-└── appsettings.json
-
----
-
 ## 🚀 Installation & Running Instructions
 
 ### 1️⃣ Prerequisites
@@ -46,25 +30,33 @@ cd CategoriesApi
 
 ### 3️⃣ Configure the Connection String
 
-Open appsettings.json and replace the connection string with your own SQL Server details:
+Open *appsettings.json* and replace the connection string with your own SQL Server details:
+
+```json
 {
   "ConnectionStrings": {
     "DefaultConnection": "Server=<SERVER_NAME>;Database=<DATABASE_NAME>;User Id=<USER>;Password=<PASSWORD>;TrustServerCertificate=True;"
   }
 }
+```
 
 ### 4️⃣ Create the Database (Migration)
 In the terminal:
+```bash
 dotnet ef database update
+```
 ➡️ This will create the database and the Categories table automatically.
 
 ### 5️⃣ Run the API
+```bash
 dotnet run
-6️⃣ Access the API
+```
+
+### 6️⃣ Access the API 
 You can now send a GET request to:
 GET https://localhost:{port}/api/categories
 
-⚠️ Common Issues
+### ⚠️ Common Issues
 If SSL trust errors occur, add TrustServerCertificate=True to your connection string.
 Ensure your SQL Server instance accepts external connections (for cloud setups).
 
@@ -72,7 +64,7 @@ Ensure your SQL Server instance accepts external connections (for cloud setups).
 
 If you do **not** have a SQL Server connection set up, the API will return **mock category data** instead of reading from the database.
 
-This allows you to אest the project quickly without setup
+This allows you to test the project quickly without setup
 
 
 📌 No additional setup is required — just run the API with:
@@ -85,12 +77,15 @@ And browse to:
 https://localhost:{PORT}/swagger
 
 You will see sample categories like:
-
+```json
 [
   { "id": 1, "name": "Electronics" },
   { "id": 2, "name": "Books" },
   { "id": 3, "name": "Clothing" }
 ]
+```
+
+---
 
 ✍️ Author
 Developed by: Tova Wolf
