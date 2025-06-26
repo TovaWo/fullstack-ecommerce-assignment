@@ -1,5 +1,5 @@
 import { createSlice, createAsyncThunk, PayloadAction } from '@reduxjs/toolkit';
-import { CartItem, Order, OrderResponse, CustomerDetails } from '../../types';
+import { CartItem, Order, OrderResponse } from '../../types';
 import { submitOrder } from '../../api/api';
 
 interface CartState {

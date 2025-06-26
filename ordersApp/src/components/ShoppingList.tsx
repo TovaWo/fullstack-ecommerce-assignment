@@ -56,7 +56,6 @@ const ShoppingList: React.FC = () => {
     if (!selectedCategory) return;
 
     const newItem: CartItem = {
-      id: `${selectedCategoryId}-${productName}-${Date.now()}`,
       name: productName.trim(),
       categoryId: selectedCategoryId,
       categoryName: selectedCategory.name,

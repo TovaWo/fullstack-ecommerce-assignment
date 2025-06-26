@@ -4,7 +4,6 @@ export interface Category {
 }
 
 export interface CartItem {
-  id: string;
   name: string;
   categoryId: string;
   categoryName: string;
