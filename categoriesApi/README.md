@@ -8,7 +8,8 @@ A simple .NET 8 Web API project that returns a list of categories from a SQL Ser
 
 - ASP.NET Core 8 (Web API)
 - Entity Framework Core
-- SQL Server
+- SQL Server (optional for dev, see [mock mode](#Running-Without-a-Database-(Mock-Mode)
+))
 
 ---
 
@@ -23,8 +24,15 @@ A simple .NET 8 Web API project that returns a list of categories from a SQL Ser
 
 ### 2️⃣ Clone the Project
 
+
+clone the repository (if not exist already)
+
 ```bash
 git clone https://github.com/TovaWo/fullstack-ecommerce-assignment.git
+```
+navigate to project
+
+```bash
 cd CategoriesApi
 ```
 
@@ -40,7 +48,7 @@ Open *appsettings.json* and replace the connection string with your own SQL Serv
 }
 ```
 
-### 4️⃣ Create the Database (Migration)
+### 4️⃣ Create the Database (Migration- ptional)
 In the terminal:
 ```bash
 dotnet ef database update
@@ -84,8 +92,3 @@ You will see sample categories like:
   { "id": 3, "name": "Clothing" }
 ]
 ```
-
----
-
-✍️ Author
-Developed by: Tova Wolf
